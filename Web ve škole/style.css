@@ -1,0 +1,49 @@
+body{
+    background-color: #024;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    color: white;
+}
+
+header{
+    background-color: #046;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(0, #046, #012);
+}
+
+h1 small{
+    position: relative;
+    bottom: 0.7em;
+    font-size: 0.5em;
+}
+
+header svg{
+    fill: #fff;
+    height: 3em;
+}
+
+nav a{
+    text-decoration: none;
+    margin: auto;
+    background-color: black;
+    color: #fff;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+nav{
+    background: #046;
+    padding: 0.5em 1em;
+    text-align: left;
+    padding-bottom: 0.4em;
+}

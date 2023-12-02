@@ -1,0 +1,15 @@
+.box{
+    width: 1800px;
+    height: 800px;
+    background-color: rgba(159, 0, 173, 0.5);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nadpis{
+    display: flex;
+    justify-content: center;
+}
