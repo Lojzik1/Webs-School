@@ -6,28 +6,13 @@ body{
 }
 
 header{
-    background: linear-gradient(to right, #3498db, #8e44ad, #e74c3c);
     color: #fff;
     padding: 1em;
     text-align: center;
 }
 
-nav ul{
-    padding: 0;
-}
-
-nav ul li{
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a{
-    text-decoration: none;
-    color: #fff;
-}
-
 section{
-    max-width: 800px;
+    max-width: 600px;
     margin: 2em auto;
     color: #fff;
 }
@@ -36,26 +21,30 @@ section p{
     color: black;
 }
 
-@media (max-width: 768px){
-    header {
-        padding: 1em;
-    }
+table{
+    border-color: black;
+}
 
-    nav ul li {
-        margin-right: 10px;
-    }
+td, th{
+    color: black;
+}
 
-    section {
-        margin: 1em auto;
-    }
+li{
+    color: black;
 }
 
 footer{
-    background: linear-gradient(to right, #3498db, #8e44ad, #e74c3c);
     color: #fff;
     text-align: center;
     padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        padding: 10px;
+    }
+
+    table{
+        font-size: 11px;
+    }
 }
