@@ -1,0 +1,50 @@
+body{
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #3498db, #8e44ad, #e74c3c);
+}
+
+header{
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+section{
+    max-width: 600px;
+    margin: 2em auto;
+    color: #fff;
+}
+
+section p{
+    color: black;
+}
+
+table{
+    border-color: black;
+}
+
+td, th{
+    color: black;
+}
+
+li{
+    color: black;
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        padding: 10px;
+    }
+
+    table{
+        font-size: 11px;
+    }
+}

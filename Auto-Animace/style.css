@@ -1,0 +1,115 @@
+body{
+    background-color: #A6FF96;
+    margin: 0;
+}
+
+.silnice{
+    background-color: black;
+    height: 350px;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pruh-container{
+    margin: auto;
+}
+
+.pruh{
+    background-color: white;
+    width: 100px;
+    height: 50px;
+}
+
+.auto{
+    width: 400px;
+    height: 150px;
+    position: fixed;
+    top: 240px;
+    animation-name: pohyb;
+    animation: pohyb 4s linear infinite;
+}
+
+.telo{
+    background-color: red;
+    width: 60%;
+    height: 70px;
+}
+
+.strecha{
+    background-color: red;
+    width: 30%;
+    height: 50%;
+}
+
+.kola{
+    display: flex;
+    position: fixed;
+    top: 350px;
+}
+
+.predni-kolo{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-left: 1em;
+    animation-name: rotace;
+    animation: rotace 3s linear infinite;
+}
+
+.zadni-kolo{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-left: 6em;
+    animation-name: rotace1;
+    animation: rotace1 3s linear infinite;
+}
+
+.disk{
+    position: absolute;
+    background-color: black;
+    width: 0.5em;
+    height: 2em;
+    margin-top: 0.5em;
+    margin-left: 1.25em;
+}
+
+.okno{
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    position: fixed;
+    margin-left: 4em;
+    margin-top: 2em;
+}
+
+@keyframes pohyb{
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 120%;
+    }
+}
+
+@keyframes rotace{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@keyframes rotace1{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
