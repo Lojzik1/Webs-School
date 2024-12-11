@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.controls{
+    margin-right: 20px;
+}
