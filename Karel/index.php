@@ -14,19 +14,10 @@
                 <textarea name="commands" placeholder="Zadej příkazy..."></textarea>
                 <button type="submit">Proveď</button>
             </form>
-        </div>
-        <div class="grid">
-            <h2>Karel</h2>
-            <table class="board">
-                <?php
-                for ($row = 0; $row < 10; $row++) {
-                    echo "<tr>";
-                    for ($col = 0; $col < 10; $col++) {
-                        echo "<td></td>";
-                    }
-                    echo "</tr>";
-                }
-                ?>
+
+            <div class="table">
+                <?php include "script.php"; ?>
+            </div>
         </div>
     </div>
 </body>
