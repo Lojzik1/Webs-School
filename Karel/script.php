@@ -12,14 +12,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($commands as $command) {
         $command = strtolower(trim($command));
 
-        if ($command === 'krok') {
+        if ($command === 'dolu') {
             $_SESSION['x'] = min($_SESSION['x'] + 1, 9);
         } elseif ($command === 'vlevo') {
             $_SESSION['y'] = max($_SESSION['y'] - 1, 0);
         } elseif ($command === 'vpravo') {
             $_SESSION['y'] = min($_SESSION['y'] + 1, 9);
-        }
+        } elseif ($command === 'nahoru') {
+            $_SESSION['x'] = max($_SESSION['x'] - 1, 0);
     }
+}
 }
 
 echo '<table class="board">';
