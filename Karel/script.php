@@ -6,29 +6,27 @@ if (!isset($_SESSION['x'])) {
     $_SESSION['y'] = 0;
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['commands'])) {
-    $commands = explode("\n", $_POST['commands']);
-}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $commands = explode("\n", trim($_POST['commands']));
 
     foreach ($commands as $command) {
         $command = strtolower(trim($command));
 
         if ($command === 'krok') {
-            $_SESSION['x'] min($_SESSION['x'] + 1, 9);
+            $_SESSION['x'] = min($_SESSION['x'] + 1, 9);
+        } elseif ($command === 'vlevo') {
+            $_SESSION['y'] = max($_SESSION['y'] - 1, 0);
+        } elseif ($command === 'vpravo') {
+            $_SESSION['y'] = min($_SESSION['y'] + 1, 9);
         }
-        elseif ($command === 'vlevo') {
-            $_SESSION['y'] max($_SESSION['y'] - 1, 0);
-        }
-        elseif ($command === 'vpravo') {
-            $_SESSION['y'] min($_SESSION['y'] + 1, 9);
     }
 }
 
-echo 'table class="board"';
+echo '<table class="board">';
 for ($row = 0; $row < 10; $row++) {
     echo '<tr>';
     for ($col = 0; $col < 10; $col++) {
-        if ($row === $_SESSION['x'] && $col === $_SESSION['y']) {
+        if ($row == $_SESSION['x'] && $col == $_SESSION['y']) {
             echo '<td class="karel"></td>';
         } else {
             echo '<td></td>';
