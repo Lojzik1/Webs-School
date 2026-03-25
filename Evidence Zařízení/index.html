@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence zařízení</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Evidence zařízení</h1>
+        <nav>
+            <ul>
+                <li><a href="#domu">Domů</a></li>
+                <li><a href="#zarizeni">Zařízení</a></li>
+                <li><a href="#pridat">Přidat zařízení</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="domu">
+            <h2>Domů</h2>
+            <p>Vítejte ve firemním systému pro správu a evidenci IT techniky.</p>
+        </section>
+
+        <section id="zarizeni">
+            <h2>Přehled zařízení</h2>
+            <div class="card-container">
+                <article class="card">
+                    <h3>Notebook Lenovo</h3>
+                    <p><strong>Typ:</strong> Laptop</p>
+                    <p><strong>Stav:</strong> Funkční</p>
+                    <button type="button">Detail</button>
+                </article>
+                
+                <article class="card">
+                    <h3>iPhone 13 Pro</h3>
+                    <p><strong>Typ:</strong> Telefon</p>
+                    <p><strong>Stav:</strong> Funkční</p>
+                    <button type="button">Detail</button>
+                </article>
+
+                <article class="card">
+                    <h3>Tiskárna HP LaserJet</h3>
+                    <p><strong>Typ:</strong> Tiskárna</p>
+                    <p><strong>Stav:</strong> Nefunkční</p>
+                    <button type="button">Detail</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="pridat">
+            <h2>Přidat zařízení</h2>
+            <form action="#" method="POST">
+                <label for="nazev">Název zařízení:</label>
+                <input type="text" id="nazev" name="nazev" maxlength="20" required>
+
+                <label for="typ">Typ zařízení:</label>
+                <select id="typ" name="typ" required>
+                    <option value="laptop">Laptop</option>
+                    <option value="telefon">Telefon</option>
+                    <option value="tiskarna">Tiskárna</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Odeslat</button>
+            </form>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Kontaktní informace:</p>
+            <p>Telefon: +420 123 456 789</p>
+            <p>Email: 2Nq6p@example.com</p>
+        </section>
+    </main>
+</body>
+</html>
